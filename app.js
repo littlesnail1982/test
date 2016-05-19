@@ -46,7 +46,8 @@ var db_name = "test" ;
 
 /* DB Connection */
 // var dburi = "mongodb://"+db_user+":"+db_pwd+"@"+db_host+":"+db_port+"/"+db_name+""
-var dburi = "mongodb://"+db_host+":"+db_port+"/"+db_name+""
+var dburi = "mongodb://ec2-52-32-230-105.us-west-2.compute.amazonaws.com:27017,ec2-52-32-230-105.us-west-2.compute.amazonaws.com:27017,ec2-52-40-27-203.us-west-2.compute.amazonaws.com:27017/test?replicaSet=rs0&readPreference=secondaryPreferred"
+//var dburi = "mongodb://"+db_host+":"+db_port+"/"+db_name+""
 mongoose.connect( dburi );
 
 
